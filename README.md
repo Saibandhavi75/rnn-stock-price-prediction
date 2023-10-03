@@ -6,27 +6,25 @@ To develop a Recurrent Neural Network model for stock price prediction.
 
 ## Problem Statement and Dataset
 **.** The given problem is to predict the google stock price based on time.
-For this we are provided with a dataset which contains features like
-Date, Opening Price, Highest Price, Lowest Price, Closing Price, Adjusted Closing Price, Volume
-Based on the given features, develop a RNN model to predict, the price of stocks in futur
+**.** For this we are provided with a dataset which contains features like
+**.** Date, Opening Price, Highest Price, Lowest Price, Closing Price, Adjusted Closing Price, Volume
+**.** Based on the given features, develop a RNN model to predict, the price of stocks in futur
 ## Neural Network Model
 
 Include the neural network model diagram.
 
 ## DESIGN STEPS
 
-### STEP 1:
-Import the necessary tensorflow modules
-
-### STEP 2:
-load the stock dataset
-
-### STEP 3:
-fit the model and then predict
+1.Read the csv file and create the Data frame using pandas.
+2.Select the " Open " column for prediction. Or select any column of your interest and scale the values using MinMaxScaler.
+3.Create two lists for X_train and y_train. And append the collection of 60 readings in X_train, for which the 61st reading will be the first output in y_train.
+4.Create a model with the desired number of neurons and one output neuron.
+5.Follow the same steps to create the Test data. But make sure you combine the training data with the test data.
+6.Make Predictions and plot the graph with the Actual and Predicted values.
 
 ## Program
-#### Developed By: A.Sai Bandhavi.
-#### Reg No: 212221240006.
+Developed By: A.Sai Bandhavi.
+Reg No: 212221240006.
 ```
 import numpy as np
 import matplotlib.pyplot as plt
